@@ -399,7 +399,7 @@ footer { text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1
 .profile-pic:hover, .profile-pic:active {
     
     /* 4. Photo 2.5 guna moto thase (Full Clear View) */
-    transform: scale(2.5); 
+    transform: scale(1.1); 
     
     /* 5. Border change thase */
     border-color: #fff;
