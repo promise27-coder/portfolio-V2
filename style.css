@@ -181,7 +181,7 @@ footer { text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1
     }
     .desktop-nav { display: none; }
     .hamburger { display: block; font-size: 1.6rem; transition: 0.3s; }
-    
+    .hamburger:hover { color: #00d4ff; }    
     /* Click karne par icon thoda rotate hoga (Optional coolness) */
     .mobile-menu.active ~ .hamburger { transform: rotate(90deg); color: #00d4ff; }
 
@@ -213,7 +213,15 @@ footer { text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1
         transform: translateY(-15px); /* Thoda upar se niche aayega */
         transition: all 0.4s ease-out; /* Slow & Smooth motion */
     }
+    .container {
+        /* ઉપર-નીચે 60px, ડાબે-જમણે 5% (10% ની જગ્યાએ) */
+        padding: 60px 5% !important; 
+    }
 
+    /* પ્રોજેક્ટ કાર્ડ વચ્ચેની જગ્યા પણ થોડી ઓછી કરીએ */
+    .project-grid {
+        gap: 25px !important; /* 40px ની જગ્યાએ */
+    }
     /* Active State (Jab Open Hoga) */
     .mobile-menu.active { 
         opacity: 1;
@@ -457,4 +465,34 @@ footer { text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1
 /* Hover kare tyare effect */
 .nav-logo:hover {
     text-shadow: 0 0 20px rgba(138, 43, 226, 0.8); /* Glow effect */
+}
+/* --- CONTACT BUTTON CENTER FIX --- */
+
+/* Form na button ne target kariye */
+.contact-form-wrapper button {
+    /* 1. Center karva mate */
+    display: block;
+    margin: 20px auto 0 auto; /* Upar 20px jagya, baju ma auto (Center) */
+    
+    /* 2. Full width hatavi ne normal karva */
+    width: auto !important; 
+    min-width: 200px; /* Thodu lambu dekhay ena mate */
+    
+    /* 3. Button Styling Restore (Jo khovai gai hoy to) */
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.contact-form-wrapper button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255,255,255,0.6);
+    background: #00d4ff; /* Hover par blue tint */
 }
