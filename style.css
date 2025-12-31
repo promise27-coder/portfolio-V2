@@ -165,7 +165,7 @@ input, textarea { width: 100%; padding: 15px; background: rgba(0,0,0,0.3); borde
 input:focus, textarea:focus { border-color: #00d4ff; box-shadow: 0 0 15px rgba(0,212,255,0.3); }
 .full-width { width: 100%; border: none; cursor: pointer; }
 
-footer { text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); backdrop-filter: blur(10px); }
+footer { text-align: center; padding: 10px 5px; margin-top: 60px; border-top: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); backdrop-filter: blur(10px); }
 .heart { color: #ff3b3b; display: inline-block; animation: beat 0.8s infinite alternate; }
 @keyframes beat { 0% { transform: scale(1); } 100% { transform: scale(1.3); } }
 
