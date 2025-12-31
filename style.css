@@ -496,3 +496,13 @@ footer { text-align: center; padding: 30px 20px; margin-top: 60px; border-top: 1
     box-shadow: 0 0 30px rgba(255,255,255,0.6);
     background: #00d4ff; /* Hover par blue tint */
 }
+/* Jo email valid na hoy to border lal thai jase */
+input:invalid {
+    border-color: #ff4444 !important;
+    box-shadow: 0 0 5px rgba(255, 68, 68, 0.5);
+}
+
+/* Jo email sachu hoy to border lili (green) */
+input:valid {
+    border-color: #00d4ff !important;
+}
