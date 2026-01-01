@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Under Construction | Promis Vora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="construction-body">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="construction-page">
+        <a href="index.html#projects" class="construction-back">
+            <i class="ri-arrow-left-line"></i>
+            Back to Projects
+        </a>
+
+        <section class="glass-card construction-card">
+            <span class="construction-label">Project Status</span>
+            <h1 id="project-name">Project Under Construction</h1>
+            <p id="project-copy">
+                This project link is being polished. Please check back soon or visit my GitHub profile for available
+                source code.
+            </p>
+
+            <div class="construction-actions">
+                <a href="https://github.com/promise27-coder" target="_blank" rel="noopener noreferrer"
+                    class="btn-main">
+                    Visit GitHub <i class="ri-github-fill"></i>
+                </a>
+                <a href="index.html#contact" class="btn-sec">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const project = params.get('project') || 'Project';
+        const type = params.get('type') || 'Link';
+
+        document.getElementById('project-name').textContent = `${project} ${type} Under Construction`;
+        document.getElementById('project-copy').textContent =
+            `The ${type.toLowerCase()} for ${project} is being polished for a better recruiter-ready presentation. ` +
+            'Please check my GitHub profile or contact me for the latest project details.';
+    </script>
+</body>
+
+</html>
